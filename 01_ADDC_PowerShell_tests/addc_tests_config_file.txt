@@ -1,0 +1,36 @@
+﻿####################################################################################
+# PLIK KONFIGURACYJNY DLA SKRYPTOW POWERSHELL
+# PRACUJACYCH Z ACTIVE DIRECTORY DOMAIN CONTROLLER
+####################################################################################
+
+# scieżka do bazy LDAP
+addcLdapPath = LDAP://OU=UNIVERSUM,DC=universum,DC=local
+
+# sciezka do katalogu dla plikow roboczych
+workFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Work_Base\\
+
+# sciezka do katalogu dla plikow archiwum
+archivesFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Archives_Base\\
+
+# sciezka do plikow konfiguracyjnych
+configFilesPath = C:\\01_ADDC_PowerShell_tests\\
+
+# nazwa systemu / domeny
+systemName = universum
+
+# nazwa dla pliku json /roboczy i archiwum/
+jsonBaseFileName = ADDC_LDAP_base_
+
+# nazwa pliku z kontami do wykluczenia
+csvExclusionFileName = addc_tests_accounts_excluded.csv
+
+####################################################################################
+# NIE ZMIENIAC
+####################################################################################
+
+timestampFormat = yyyyMMddThhmmss
+timestampZero = 9223372036854775807
+dateFormat = dd.MM.yyyy T HH:mm:ss
+nc = no data available
+varTrue = 1
+varFalse = 0
