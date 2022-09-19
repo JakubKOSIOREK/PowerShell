@@ -4,25 +4,35 @@
 ####################################################################################
 
 # scieżka do bazy LDAP
-addcLdapPath = LDAP://OU=UNIVERSUM,DC=universum,DC=local
+	addcLdapPath = LDAP://OU=Users,OU=UNIVERSUM,DC=universum,DC=local
+	addcLdapCmptrPath = LDAP://OU=Computers,OU=UNIVERSUM,DC=universum,DC=local
+
+# sciezka do plikow konfiguracyjnych
+	configFilesPath = C:\\01_ADDC_PowerShell_tests\\
 
 # sciezka do katalogu dla plikow roboczych
-workFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Work_Base\\
+	workFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Work_Base\\
+
+# sciezka do katalogu dla plikow archiwum
+	archivesFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Archives_Base\\
+
 
 # sciezka do katalogu dla plikow archiwum
 archivesFilesPath = C:\\01_ADDC_PowerShell_tests\\ADDC_Archives_Base\\
 
-# sciezka do plikow konfiguracyjnych
-configFilesPath = C:\\01_ADDC_PowerShell_tests\\
 
 # nazwa systemu / domeny
-systemName = universum
+systemName = universum.local
 
 # nazwa dla pliku json /roboczy i archiwum/
-jsonBaseFileName = ADDC_LDAP_base_
+	jsonBaseFileName = ADDC_LDAP_base_
+	jsonCmptrBaseFileName = ADDC_LDAP_cmptr_base_
+
+# nazwa dla pliku csv po konwersji z roboczego json
+	csvReportFileName = ADDC_LDAP_csv_
 
 # nazwa pliku z kontami do wykluczenia
-csvExclusionFileName = addc_tests_accounts_excluded.csv
+	csvExclusionFileName = addc_tests_accounts_excluded.csv
 
 ####################################################################################
 # NIE ZMIENIAC
